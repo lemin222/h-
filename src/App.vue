@@ -11,6 +11,10 @@ export default {
       user: {
         name: '哈默'
       }
+      /*
+      具名插槽通过template模板 + v-slot:插槽名使用
+      匿名插槽，不需要template模板
+      */
     }
   }
 }
@@ -18,7 +22,18 @@ export default {
 </script>
 <template>
   <Child url="http://www.bing.com">
-    <button color="blue">youdao</button>
+    <template v-slot:header>
+      <h1>header标题</h1>
+    </template>
+
+
+
+    <p>一段内容</p>
+
+
+    <template v-slot:footer>
+      <p>footer标题</p>
+    </template>
 
   </Child>
 </template>
