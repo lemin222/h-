@@ -17,7 +17,10 @@ export default {
 
 </script>
 <template>
-  <Child url="http://www.bing.com"> </Child>
+  <Child url="http://www.bing.com">
+    <button color="blue">youdao</button>
+
+  </Child>
 </template>
 
 <style scoped>
